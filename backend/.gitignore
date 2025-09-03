@@ -1,33 +1,57 @@
-HELP.md
+# Maven / Java build
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### STS ###
+# Build / IDE generated
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Eclipse / Spring Tool Suite
 .apt_generated
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
-.sts4-cache
+.sts4-cache/
 
-### IntelliJ IDEA ###
-.idea
+# IntelliJ IDEA
+.idea/
 *.iws
 *.iml
 *.ipr
 
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
+# Logs
+*.log
+logs/
+log/
+
+# Environment / configuration
+*.env
+application.properties
+application.yml
+
+# Database
+*.db
+*.sql
+*.h2.db
+
+# VS Code
 .vscode/
+
+# System / OS files
+.DS_Store
+Thumbs.db
+
+# Optional: Ignore Maven wrapper jar if regenerated
+.mvn/wrapper/maven-wrapper.jar
