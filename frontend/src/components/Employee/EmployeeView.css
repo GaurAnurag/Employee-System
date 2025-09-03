@@ -1,0 +1,110 @@
+@import '../../assets/variables.css';
+
+.employee-view-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: var(--spacing-large);
+  background: linear-gradient(135deg, var(--color-background-alt), #f0f4f8);
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: var(--font-family-base);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.employee-view-container:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.employee-view-header {
+  font-size: 2rem;
+  font-weight: var(--font-weight-bolder);
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-large);
+  border-bottom: 3px solid var(--color-secondary);
+  padding-bottom: var(--spacing-small);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(90deg, var(--color-secondary), #6c63ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: var(--spacing-large);
+}
+
+.tab {
+  background-color: var(--color-background-alt);
+  border: 1px solid var(--color-secondary);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-small) var(--spacing-medium);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-secondary);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab:hover {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.tab.active {
+  background-color: #6c63ff;
+  color: white;
+  box-shadow: 0 4px 10px rgba(108, 99, 255, 0.5);
+}
+
+.tab-content {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-medium);
+  box-shadow: var(--box-shadow-lighter);
+}
+
+.employee-details {
+  font-size: 1.1rem;
+  color: var(--color-text-primary);
+  line-height: 1.8;
+  margin-top: var(--spacing-medium);
+}
+
+.employee-details p {
+  margin: var(--spacing-small) 0;
+  padding-left: 10px;
+  border-left: 3px solid var(--color-secondary);
+  transition: border-color 0.3s ease;
+}
+
+.employee-details p:hover {
+  border-color: #6c63ff;
+  color: #4a47a3;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .employee-view-container {
+    margin: 20px 10px;
+    padding: var(--spacing-medium);
+  }
+
+  .employee-view-header {
+    font-size: 1.5rem;
+  }
+
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tab {
+    width: 100%;
+    text-align: center;
+  }
+
+  .employee-details {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
