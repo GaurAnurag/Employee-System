@@ -15,7 +15,6 @@ Optimized React rendering & API queries
 
 ⚙️ Setup
 Backend
-git clone https://github.com/YourUsername/Employee-System.git
 cd Employee-System/backend
 mvn spring-boot:run
 Runs at: http://localhost:8080
